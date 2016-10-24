@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="zhan.myapplication.MainActivity">
 
     <TextView
@@ -14,15 +15,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!大家好" />
+    <Button
+        android:id="@+id/btn_recycleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="gotoRecycleView"
+        android:text="RecycleView.."/>
 
-    <zhan.myapplication.LoginView
-        android:id="@+id/loginview"
-        android:layout_below="@+id/textview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <zhan.myapplication.LoginView
-        android:id="@+id/loginview2"
-        android:layout_below="@+id/loginview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</RelativeLayout>
+</LinearLayout>
